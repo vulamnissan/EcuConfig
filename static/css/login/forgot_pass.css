@@ -1,6 +1,6 @@
 /*--------------------Root Css-----------------------------*/
 :root {
-    --color_main: linear-gradient(to right, #112D60, #DD83E0);
+    --color_main:linear-gradient(to right, #112D60, #B6C0C5);
     --font_size_form:19px;
     --height_input:43px;
     --width_input:389px;
@@ -70,9 +70,8 @@ html, body {
     border-style: solid;
     border-color: var(--color_boder) ;
     font-size: var(--font_text);
-    padding-left: 10px;
-    padding-right: 40px;
     box-sizing: border-box;
+    padding-left: 10px;
 }
 #submit{
     width: var(--width_input);
@@ -80,31 +79,16 @@ html, body {
     background: var(--color_main);
     border-radius: var(--boder_radius_input);
     color: var(--background_while);
-    font-size:var(--font_text);
-    
-}
-#pass_box{
-    position: relative;
+    font-size:var(--font_text); 
 }
 
-#pass_box i {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    font-size: var(--font_text);
-}
-
-#not_eye {
-    display: none;
-}
 /*   right_form  */
 #right_form {
     width: 402px;
     /* height: 100%; */
     background: var(--color_main);
     border-radius: var(--boder_radius_input);
+    
     color: var(--background_while);
 
 }

@@ -4,10 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login_page</title>
-    <link rel="stylesheet" href="{% static 'css/login/login_page.css' %}">
-    <script src="{% static 'js/login/login_page.js' %}"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <title>Forgot password</title>
+    <link rel="stylesheet" href="{% static 'css/login/forgot_pass.css' %}">
 </head>
 <body>
     <div id="container">
@@ -15,7 +13,7 @@
         <div id="form_sign_in">
           <form id="form_login" action="">
             <h2 style="margin-bottom: 18px; margin-top: 10px; font-size: 30px">
-              Sign in to work
+              Forgot Password
             </h2>
             <hr
               style="
@@ -27,7 +25,7 @@
               "
             />
             <div id="username_box">
-              <label for="username" class="lable_sign_in">User name</label>
+              <label for="username" class="lable_sign_in">Email</label>
               <input
                 type="text"
                 id="username"
@@ -35,30 +33,15 @@
                 class="input_text"
               />
             </div>
-            <div id="pass_box">
-              <label for="password" class="lable_sign_in">Password</label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                class="input_text"
-              />
-              <i class="bi bi-eye-fill" id="eye" onclick="togglePassword()"></i>
-              <i
-                class="bi bi-eye-slash-fill"
-                id="not_eye"
-                onclick="togglePassword()"
-              ></i>
-            </div>
             <input
               type="submit"
-              value="Sign in"
+              value="Reset password"
               id="submit"
               style="margin-bottom: 15px"
             />
           </form>
-          <a href="{% url 'forgot_pass' %}" style="font-style: italic; font-size: 18px"
-            >Forgot password</a
+          <a href="#" style="font-style: italic; font-size: 18px"
+            >Return Sign in page</a
           >
         </div>
         <div id="right_form">
@@ -92,12 +75,3 @@
     </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
