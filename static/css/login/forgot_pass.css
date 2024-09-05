@@ -40,7 +40,7 @@ html, body {
 /*   sign_in    */
 #sign_in {
     width: 100%;
-    height: 82%;
+    height: 80%;
     background: var(--background_while);
     display: flex;
 }
@@ -108,19 +108,13 @@ html, body {
     padding-left: 5%;
     font-weight: lighter;
 }
-/*--------------------under_sign_in------------------------*/
-#message{
-    width: 100%;
-    height: 8%;
-    background: var(--background_while);
-    padding-top: 20px;
-}
+
 /*--------------------under_sign_in------------------------*/
 #under_sign_in {
     width: 100%;
-    height: 10%;
+    height: 20%;
     background: var(--background_while);
-    padding-top: 100px;
+    padding-top: 110px;
 }
 #language{
     width: 187px;

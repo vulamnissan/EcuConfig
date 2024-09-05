@@ -70,9 +70,12 @@ html, body {
     border-style: solid;
     border-color: var(--color_boder) ;
     font-size: var(--font_text);
+<<<<<<< HEAD
+=======
     padding-left: 10px;
     padding-right: 40px;
     box-sizing: border-box;
+>>>>>>> 453b977 (Upload Forgot pass page)
 }
 #submit{
     width: var(--width_input);
@@ -83,7 +86,7 @@ html, body {
     font-size:var(--font_text);
     
 }
-#pass_box{
+#form_login{
     position: relative;
 }
 
@@ -93,7 +96,6 @@ html, body {
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    font-size: var(--font_text);
 }
 
 #not_eye {
@@ -105,6 +107,7 @@ html, body {
     /* height: 100%; */
     background: var(--color_main);
     border-radius: var(--boder_radius_input);
+    
     color: var(--background_while);
 
 }
