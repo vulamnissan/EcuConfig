@@ -124,11 +124,21 @@ html, body {
     padding-left: 5%;
     font-weight: lighter;
 }
+/*--------------------pass_word_error------------------------*/
+
+#pass_word_error {
+    width: 100%;
+    height: 10%;
+    background: var(--background_while);
+    padding-top: 45px;
+    font-size:var(--font_text);
+    color: red;
+}
 
 /*--------------------under_sign_in------------------------*/
 #under_sign_in {
     width: 100%;
-    height: 20%;
+    height: 10%;
     background: var(--background_while);
     padding-top: 110px;
 }

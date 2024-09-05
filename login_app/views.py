@@ -11,3 +11,5 @@ def view_forgot_pass(request):
   template = loader.get_template('login/forgot_pass.html')
   return HttpResponse(template.render())
 
+
+
