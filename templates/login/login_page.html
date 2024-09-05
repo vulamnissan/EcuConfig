@@ -13,7 +13,8 @@
     <div id="container">
         <div id="sign_in">
             <div id="form_sign_in">
-                <form id="form_login" action="">
+                <form id="form_login" action="" method="post">
+                    {% csrf_token %}
                     <h2 style="margin-bottom:18px ; margin-top :10px ; font-size:30px">Sign in to work</h2>
                     <hr style="width: 100%; margin-bottom:46px; background-color: #7A7A7A; border: none; height: 1px;">
                     <label for="username" class='lable_sign_in'>User name</label><br>
