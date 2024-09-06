@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="{% static 'css/login/login_page.css' %}">
     <script src="{% static 'js/login/login_page.js' %}"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
-</head>
-<body>
+    <script src="{% static 'js/login/login_page.js' %}" defer></script>
+  </head>
+  <body>
     <div id="container">
       <div id="sign_in">
         <div id="form_sign_in">
           <form id="form_login" action="">
+            
             <h2 style="margin-bottom: 18px; margin-top: 10px; font-size: 30px">
               Sign in to work
             </h2>
@@ -52,7 +54,7 @@
             </div>
             <input
               type="submit"
-              value="Sign in"
+              value="Reset password"
               id="submit"
               style="margin-bottom: 15px"
             />
@@ -69,6 +71,8 @@
             <li>Setup lịch họp, tự động liên lạc đến các bên liên quan</li>
           </ul>
         </div>
+      </div>
+      <div id ="pass_word_error">
       </div>
       <div id="under_sign_in">
         <hr
@@ -90,7 +94,7 @@
         <p>@DR31 Nisan Automotive Technology Viet Nam</p>
       </div>
     </div>
-</body>
+  </body>
 </html>
 
 

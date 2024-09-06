@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forgot password</title>
+    <link rel="stylesheet" href="{% static 'css/login/forgot_pass.css' %}">
+    <script src="{% static 'js/login/forgot_pass.js' %}" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="forgot_pass">
+        <div id="form_forgot_pass">
+          <form id="form_reset_pass" action="">
+            <h2 style="margin-bottom: 18px; margin-top: 10px; font-size: 30px">
+              Forgot Password
+            </h2>
+            <hr
+              style="
+                width: 100%;
+                margin-bottom: 46px;
+                background-color: #7a7a7a;
+                border: none;
+                height: 1px;
+              "
+            />
+            <div id="username_box">
+              <label for="email" class="lable_sign_in">Email</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                class="input_text"
+              />
+            </div>
+            <input
+              type="submit"
+              value="Reset password"
+              id="submit"
+              style="margin-bottom: 15px"
+            />
+          </form>
+          <a href="#">Return Sign in page</a>
+        </div>
+        <div id="right_form">
+          <h1>ECU CONFIG WEBSITE</h1>
+          <ul>
+            <li>Khởi tạo, yêu cầu làm Giren</li>
+            <li>Khởi tạo, tính toán giá trị config cho các ECU</li>
+            <li>Setup lịch họp, tự động liên lạc đến các bên liên quan</li>
+          </ul>
+        </div>
+      </div>
+      <div id="message"></div>
+      <div id="under_forgot_pass">
+        <hr />
+        <form method="post" action="" id="language">
+          <select>
+            <option>Japanese</option>
+            <option>English</option>
+          </select>
+        </form>
+        <p>@DR31 Nisan Automotive Technology Viet Nam</p>
+      </div>
+    </div>
+  </body>
+</html>

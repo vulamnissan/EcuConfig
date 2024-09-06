@@ -1,6 +1,6 @@
-document.getElementById('form_login').addEventListener('submit', function(event){
+document.getElementById('form_reset_pass').addEventListener('submit', function(event){
     event.preventDefault(); 
-    const mail = document.getElementById('username').value;
+    const mail = document.getElementById('email').value;
     const error_mess = document.getElementById('message');
 
     // tên người dùng và mật khẩu là 'admin' và '1234'
