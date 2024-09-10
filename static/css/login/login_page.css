@@ -70,6 +70,9 @@ html, body {
     border-style: solid;
     border-color: var(--color_boder) ;
     font-size: var(--font_text);
+    padding-left: 10px;
+    padding-right: 40px;
+    box-sizing: border-box;
 }
 #submit{
     width: var(--width_input);
@@ -80,18 +83,17 @@ html, body {
     font-size:var(--font_text);
     
 }
-#form_login{
+#pass_box{
     position: relative;
 }
 
-#form_login i{
+#pass_box i {
     position: absolute;
-    right:15px;
-    bottom: 37px;
-    transform: translateY(-410%);
-    font-size:var(--font_text);
-    z-index: 2;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     cursor: pointer;
+    font-size: var(--font_text);
 }
 
 #not_eye {
@@ -103,7 +105,6 @@ html, body {
     /* height: 100%; */
     background: var(--color_main);
     border-radius: var(--boder_radius_input);
-    
     color: var(--background_while);
 
 }
@@ -123,11 +124,21 @@ html, body {
     padding-left: 5%;
     font-weight: lighter;
 }
+/*--------------------pass_word_error------------------------*/
+
+#pass_word_error {
+    width: 100%;
+    height: 10%;
+    background: var(--background_while);
+    padding-top: 45px;
+    font-size:var(--font_text);
+    color: red;
+}
 
 /*--------------------under_sign_in------------------------*/
 #under_sign_in {
     width: 100%;
-    height: 20%;
+    height: 10%;
     background: var(--background_while);
     padding-top: 110px;
 }

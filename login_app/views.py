@@ -35,7 +35,7 @@ class Log_in(View):
 
 class Forget_pass(View):
     def get(self,request):
-        return render(request,"authentication/forget_pass.html",{"notice":""})
+        return render(request,"login/forgot_pass.html",{"notice":""})
     
     def post(self,request):
         receiver_email=request.POST.get("email")
@@ -49,12 +49,10 @@ class Forget_pass(View):
             # Define the receiver email
             # receiver_email = "vann-phammmmmmm@mail.nissan.co.jp"
 
-            subject = "Welcome to Amazing Company"
+            subject = "Reset password web config"
             body = """\
-            Hey there!
-
-            Thanks for joining us at Amazing Company. Your email has been verified and your account has been created.
-            Head to the website to login and start using our features."""
+            Reset password web config
+            ."""
 
             # Create the email message
             message = MIMEMultipart()
@@ -88,4 +86,4 @@ from django.contrib.auth.decorators import login_required
 
 @login_required
 def home_view(request):
-    return render(request, 'home/home.html')
+    return render(request, 'ecu_config/home.html')

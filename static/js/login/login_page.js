@@ -14,3 +14,26 @@ function togglePassword() {
         notEye.style.display = 'none';
     }
 }
+
+
+document.getElementById('form_login').addEventListener('submit', function(event){
+    event.preventDefault(); 
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const error_mess = document.getElementById('pass_word_error');
+
+    // tên người dùng và mật khẩu là 'admin' và '1234'
+
+    
+    const validUsername = 'admin';
+    const validPassword = '1234';
+    // Kiểm tra 
+    if (username === validUsername && password === validPassword) {
+        error_mess.innerHTML = "";
+        return true;
+    } else {
+        error_mess.innerHTML = "Your authentication information is incorrect. <br/> Please try again.";
+        return false;
+    }
+
+})

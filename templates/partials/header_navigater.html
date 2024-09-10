@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header_navigater</title>
+    <link rel="stylesheet" href='{% static "css/partials/header_navigater.css" %}'>
+    <script src= '{% static "../js/header_navigater.js" %}'> </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <div id=container>
+        <div id="header">
+            <div id="left_header">
+                <i class="bi bi-house-fill"></i>
+                <div id="text">
+                    <h1>ECU CONFIG WEB</h1>
+                    <p>@DR31 Nissan Automotive Technology Viet Nam</P>
+                </div>
+            </div>
+            <div id="right_header">
+                <i class="bi bi-calendar-week" id="calendar"></i>
+                <i class="bi bi-chat-left-text" id="notification"></i>
+                <p>NguyenXuanThan - EcuManager</p>
+                <i class="bi bi-caret-down-fill" id="down_fill"></i>
+            </div>
+        </div>
+        <div id="main">
+            <div id="left_main">
+                <i class="bi bi-list"></i>
+            </div>
+            <div id="main_content">
+                {% block content %}
+                {% endblock %}
+            </div>
+            <div id="right_main">
+                <i class="bi bi-question-square"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
