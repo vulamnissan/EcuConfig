@@ -1,0 +1,186 @@
+/*--------------------Root Css-----------------------------*/
+:root {
+    --color_while: white;
+    --color_black: black;
+    --color_gray: #DEDEDE;
+    --color_header_bottom: linear-gradient(to right, #112D60, #DD83E0);
+    
+}
+/*-----------------------------------------------------*/
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background: var(--color_while);
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center;     /* Căn giữa theo chiều dọc */
+}
+/*-----------------------container-----------------*/
+#container {
+    width: 100%;
+    height: 100%;
+}
+/*--------------------header------------------------*/
+#hearder_base2 {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    flex-direction:column;
+}
+
+/*--------------------header_bottom------------------------*/
+#header_top {
+    width: 100%;
+    height: 65%;
+    background :var(--color_black);
+    display: flex;
+    flex-direction: row;
+
+}
+/*-------left_header-------*/
+#left_header {
+    width: 50%;
+    height: 100%; 
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#left_header i {
+    color: var(--color_while);
+    font-size:29px;
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-right: 0.5px solid var(--color_while); /* Đường viền bên trái */
+    padding-right: 10px;
+}
+#text{
+    margin-left: 60px;
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    flex-direction: column;
+    
+}
+#text h1 {
+    color: var(--color_while);
+    font-size: 20px;
+  
+}
+#text p {
+    color: var(--color_while);
+    font-size: 15px;
+}
+#left_header i {
+    color: var(--color_while);
+    font-size:29px;
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-right: 0.5px solid var(--color_while); /* Đường viền bên trái */
+    padding-right: 10px;
+   
+}
+/*-------right_header-------*/
+#right_header {
+    width: 50%;
+    height: 100%; 
+    position: relative;
+    display: flex;
+    align-items: center; 
+}
+
+#calendar {
+    color: var(--color_while);
+    font-size:29px;
+    position: absolute;
+    left: 350px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-right: 0.5px solid var(--color_while); /* Đường viền bên trái */
+    padding-right: 20px;
+}
+
+#notification {
+    color: var(--color_while);
+    font-size:29px;
+    position: absolute;
+    left: 400px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-right: 0.5px solid var(--color_while); /* Đường viền bên trái */
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#right_header p{
+    color: var(--color_while);
+    font-size: 15px;
+    position: absolute;
+    left:490px;
+}
+
+#down_fill{
+    color: var(--color_while);
+    font-size:24px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+/*--------------------header_bottom------------------------*/
+#header_bottom {
+    width: 100%;
+    height: 35%;
+    background :var(--color_header_bottom);
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    flex-direction: column;
+}
+
+#header_bottom h1{
+    color: var(--color_while);
+    font-size:25px;
+    margin-left: 10px;
+
+}
+/*--------------------under_header------------------------*/
+
+#under_header{
+    width: 100%;
+    height: 88%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*------------left_narvigater-----------*/
+#left_narvigater{
+    width: 3%;
+    height: 100%;
+    background: var(--color_while);
+}
+
+#left_narvigater i{
+    font-size:29px;
+    position: absolute;
+    transform: translateX(40%);
+}
+/*------------main-----------*/
+#main{
+    width: 97%;
+    height: 100%;
+    background: var(--color_gray);
+}

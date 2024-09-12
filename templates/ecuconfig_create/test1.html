@@ -1,0 +1,30 @@
+{% block content1 %}
+<div class="overflow-y-scroll scrollbar">
+    <table id="eventTable" class="table-scroll">
+        <thead>
+            <tr>
+                <th>Chọn</th> <!-- Cột chọn -->
+                <th>Tiêu đề 1</th>
+                <th>Tiêu đề 2</th>
+                <th>Tiêu đề 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" class="row-select"></td> <!-- Checkbox cho hàng 1 -->
+                <td>Dữ liệu 1</td>
+                <td>Dữ liệu 2</td>
+                <td>Dữ liệu 3</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="row-select"></td> <!-- Checkbox cho hàng 2 -->
+                <td>Dữ liệu 4</td>
+                <td>Dữ liệu 5</td>
+                <td>Dữ liệu 6</td>
+            </tr>
+            <!-- Thêm nhiều hàng dữ liệu hơn ở đây -->
+        </tbody>
+    </table>
+</div>                
+                
+{% endblock %}
