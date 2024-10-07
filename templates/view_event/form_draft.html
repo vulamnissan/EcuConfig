@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create_event</title>
+  
+  </head>
+  <body>
+    <form id="ecu" action="" method="POST">
+      {% csrf_token %}
+        <input
+        type="text"
+        id="euc"
+        name="ecu"
+        class="input_text"
+        />
+       
+    <input
+        type="submit"
+        value="list_ecu"
+        id="submit"
+        name="action"
+        style="margin-bottom: 15px"
+    />
+    </form>
+
+    <form id="event" action="" method="POST">
+      {% csrf_token %}
+    <input
+        type="text"
+        id="list_event"
+        name="list_event"
+        class="input_text"
+    />
+    
+    <input
+    type="submit"
+    value="list_event"
+    name="action"
+    id="submit"
+    style="margin-bottom: 15px"
+    />
+</form>
+
+
+
+          
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
